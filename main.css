@@ -1,0 +1,124 @@
+/* General styles */
+body {
+  background: linear-gradient(50deg, #a279d6, #3D4FF2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 290px;
+  height: 290px; /* Increased height for a taller box */
+  border-radius: 10px; /* Updated corner radius */
+  padding: 10px;
+  margin: auto;
+  border: none; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin: 28px 15px 12px 15px;
+  color: #F9F5FF;
+  text-shadow: 1px 3px 3px rgba(61,79,242, 1);
+}
+
+.main-box {
+  background-color: #F9F5FF;
+  border-radius: 10px;
+  box-shadow: inset 1px 2px 4px rgb(61,79,242, 1);
+  padding: 10px;
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 50%; /* Make sure it takes up the full height of its parent */
+}
+
+p {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 350;
+  color: #3D4FF2;
+  line-height: 0;
+  padding: 20px 0px 0px 5px;
+  margin: 0px;
+}
+.small-text {
+  color: #F9F5FF;
+  font-size: 12px;
+  padding: 19px 10px 15px 10px;
+}
+
+/* Popup styles */
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 15px 10px 10px 10px;
+  position: relative;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.currency-sign {
+  position: absolute;
+  left: 22px;
+  top: 57%;
+  transform: translateY(-50%);
+  color: #3D4FF2;
+  z-index: 1; 
+  font-size: 15px; 
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+input {
+  width: calc(100% - 60px); /* Adjusted width for a shortened input field */
+  padding: 5px 5px 5px 28px; /* Adjusted padding to accommodate the $ sign */
+  box-shadow: inset 1px 1px 2px rgb(61,79,242, 0.5);
+  color: #3D4FF2;
+  border: 2px solid #3D4FF2;
+  border-radius: 40px;
+  margin: 5px 0px 0px 0px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style to hide the up and down arrows inside the input field */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.refresh-button {
+  margin: 10px ;
+  width: calc(100%- 80px); /* Set width to make it a square */
+  background-color: #ffffff;
+  box-shadow: inset 0.5px 1px 2px rgb(61,79,242, 0.5);
+  color: white;
+  margin: 5px 0px 0px 10px;
+  padding: 7px;
+  border: 2px solid #3D4FF2;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

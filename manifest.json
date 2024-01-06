@@ -1,0 +1,30 @@
+{
+  "name": "How long do I have to work to have it?",
+  "version": "4.0",
+  "manifest_version": 3,
+  "description": "Chrome extension that converts price to time needed to work on your hourly wage.",
+  "icons": {
+    "16": "TIM2logo.png",
+    "32": "TIM2logo.png",
+    "48": "TIM2logo.png",
+    "128": "TIM2logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webNavigation",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
